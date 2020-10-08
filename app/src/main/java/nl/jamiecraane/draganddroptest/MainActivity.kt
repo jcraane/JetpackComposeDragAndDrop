@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val draggedY = mutableStateOf(0f)
 
         val colors = listOf(Color.Green, Color.Gray, Color.Blue)
-        val dropTargetBounds = mutableStateMapOf<Int, Rect>()
+        val dropTargetBounds = mutableMapOf<Int, Rect>()
         var dragObjectBounds = Rect(0f, 0f, 0f, 0f)
 
         setContent {
